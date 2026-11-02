@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bilal Zaib — UI/UX Designer Portfolio</title>
+  <meta name="description" content="Portfolio of Bilal Zaib, UI/UX Designer designing digital products that are clear, usable, and conversion focused.">
+  <script>
+    const navigationEntry = performance.getEntriesByType('navigation')[0];
+    if (navigationEntry && navigationEntry.type === 'reload') {
+      history.scrollRestoration = 'manual';
+      if (location.hash) history.replaceState(null, '', location.href.split('#')[0]);
+      window.scrollTo(0, 0);
+      window.__portfolioHomeReload = true;
+    }
+  </script>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/bilal-portrait.png">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Global Page Scroll Progress Line -->
+  <div class="page-scroll-progress" id="pageProgress"></div>
+
+  <!-- Luxury Page Transition Curtain Overlay -->
+  <div class="page-transition-curtain" id="pageCurtain">
+    <div class="curtain-content">
+      <span class="curtain-brand">BILAL ZAIB</span>
+      <span class="curtain-target" id="curtainTarget">WORK [4]</span>
+    </div>
+  </div>
+
+  <!-- Full-Width Website Container -->
+  <div class="site-wrapper">
+
+    <!-- HERO SECTION (Full-Width Edge-to-Edge Desktop View) -->
+    <section class="hero-section" id="home">
+      
+      <!-- Top Navigation Bar -->
+      <header class="top-nav">
+        <a class="header-brand" href="#home" aria-label="Bilal Zaib home">
+          <span class="header-brand-mark" aria-hidden="true">BZ</span>
+          <span class="header-brand-name">Bilal Zaib</span>
+        </a>
+
+        <!-- Center Navigation Menu -->
+        <nav class="nav-links">
+          <a href="#work" class="nav-item">Work <span class="count">[4]</span></a>
+          <a href="#service" class="nav-item">Service <span class="count">[4]</span></a>
+          <a href="#experience" class="nav-item">Experience <span class="count">[4y+]</span></a>
+          <a href="#contact" class="nav-item">Contact</a>
+        </nav>
+
+        <!-- Right Action Button -->
+        <div class="header-actions">
+          <a href="#contact" class="btn-talk">
+            <span>Let's Talk</span>
+            <svg class="arrow-icon" viewBox="0 0 16 16" fill="none">
+              <path d="M4.5 11.5L11.5 4.5M11.5 4.5H5.5M11.5 4.5V10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </header>
+
+      <!-- Central Hero Visual Area -->
+      <div class="hero-stage">
+        
+        <!-- Big Hero Typography: BILAL ZAIB -->
+        <div class="hero-typography">
+          <span class="word-outline">BILAL</span>
+          <span class="word-solid">ZAIB</span>
+        </div>
+
+        <!-- Hero Portrait Cutout -->
+        <div class="portrait-wrapper">
+          <img 
+            src="assets/hero-portrait.png" 
+            alt="Bilal Zaib" 
+            class="portrait-img"
+            loading="eager"
+          />
+        </div>
+
+        <!-- Bottom Left Description & Action -->
+        <div class="hero-intro">
+          <h1 class="role-title">UI/UX Designer</h1>
+          <p class="role-description">
+            Designing digital products that are clear, usable, and conversion focused.
+          </p>
+          <a href="#contact" class="btn-collaborate">
+            <span>Let's collaborate</span>
+            <svg class="arrow-icon" viewBox="0 0 16 16" fill="none">
+              <path d="M4.5 11.5L11.5 4.5M11.5 4.5H5.5M11.5 4.5V10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Bottom Right Social Pills -->
+        <div class="hero-socials">
+          <a href="https://www.instagram.com/rana.bilal.munj/" target="_blank" rel="noopener noreferrer" class="social-chip">
+            <svg class="social-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            <span>Instagram</span>
+          </a>
+
+          <a href="https://wa.me/923247118186" target="_blank" rel="noopener noreferrer" class="social-chip">
+            <svg class="social-svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.52 3.48A11.83 11.83 0 0 0 12.08 0C5.5 0 .14 5.35.14 11.93c0 2.1.55 4.16 1.59 5.97L0 24l6.26-1.64a11.9 11.9 0 0 0 5.81 1.48h.01c6.58 0 11.93-5.35 11.94-11.93a11.86 11.86 0 0 0-3.5-8.43ZM12.08 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.72.98.99-3.63-.24-.37a9.87 9.87 0 0 1-1.52-5.26c0-5.46 4.45-9.9 9.9-9.9a9.83 9.83 0 0 1 7 2.9 9.83 9.83 0 0 1 2.9 7c0 5.46-4.45 9.9-9.91 9.9Zm5.44-7.42c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.08-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.21 5.08 4.5.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.08-.12-.27-.2-.57-.35Z"/>
+            </svg>
+            <span>WhatsApp</span>
+          </a>
+
+          <a href="mailto:bilalaurangzaib664@gmail.com" class="social-chip">
+            <svg class="social-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+              <path d="m3 7 9 6 9-6"></path>
+            </svg>
+            <span>Email</span>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Quick Scroll Indicator -->
+      <a href="#work" class="scroll-cue" aria-label="Explore pages">
+        <span>Scroll to explore</span>
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M7 10l5 5 5-5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+
+    </section>
+
+
+    <!-- ============================================ -->
+    <!-- SECTION 2: WORK [4] (PORTFOLIO GALLERY)      -->
+    <!-- ============================================ -->
+    <section class="page-section" id="work">
+      <div class="section-container">
+        <div class="skills-intro lazy-reveal">
+          <div class="skills-text-content">
+            <h3 class="skills-main-title"><span>Work</span></h3>
+            <p class="skills-main-desc">I work with modern web technologies to build fast, responsive, and user-friendly digital solutions. Here are the main skills and services I offer.</p>
+          </div>
+          <div class="skills-decorative">
+            <span class="handwritten-note">Clean Code<br>Better Web<br>Real Impact</span>
+          </div>
+        </div>
+
+        <div class="work-showcase">
+          <div class="section-header lazy-reveal">
+            <div class="work-title-group">
+              <span class="work-bg-title">PORTFOLIO</span>
+              <h2 class="work-fg-title">/SELECTED WORK</h2>
+            </div>
+          </div>
+
+          <!-- Skills Grid (Refactored Work Grid) -->
+          <div class="skills-grid">
+          <!-- Card 1: HTML & CSS -->
+          <a class="skill-card lazy-reveal" href="project.html?project=html-css" aria-label="View HTML and CSS project details">
+            <div class="skill-visual" data-title="HTML &amp; CSS">
+              <img src="assets/html-css.jpg" alt="HTML & CSS Illustration">
+            </div>
+            <div class="skill-content">
+              <div class="skill-header">
+                <div class="skill-icon icon-blue">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>
+                </div>
+                <h4 class="skill-title">HTML & CSS</h4>
+              </div>
+              <span class="skill-subtitle">STRUCTURE / STYLE / BEAUTY</span>
+              <div class="skill-details-content">
+                <p class="skill-desc">I use HTML and CSS to create clean, semantic and visually appealing websites. From simple landing pages to complex layouts, I focus on writing clean code and responsive designs.</p>
+                <ul class="skill-features">
+                  <li><span>Semantic HTML5 markup</span></li>
+                  <li><span>Modern CSS (Flexbox & Grid)</span></li>
+                  <li><span>Cross-browser compatibility</span></li>
+                </ul>
+              </div>
+              <span class="skill-btn">
+                <span>Learn More</span>
+                <svg viewBox="0 0 16 16" fill="none"><path d="M4.5 11.5L11.5 4.5M11.5 4.5H5.5M11.5 4.5V10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Card 2: JavaScript -->
+          <a class="skill-card lazy-reveal" href="project.html?project=javascript" aria-label="View JavaScript project details">
+            <div class="skill-visual" data-title="JavaScript">
+              <img src="assets/javascript.jpg" alt="JavaScript Illustration">
+            </div>
+            <div class="skill-content">
+              <div class="skill-header">
+                <div class="skill-icon icon-yellow">
+                  <span class="js-text">JS</span>
+                </div>
+                <h4 class="skill-title">JavaScript</h4>
+              </div>
+              <span class="skill-subtitle">INTERACTIVITY / DYNAMIC / FUNCTIONAL</span>
+              <div class="skill-details-content">
+                <p class="skill-desc">I use JavaScript to add interactivity and dynamic features to websites. From form validation to custom animations, I bring ideas to life with clean and efficient code.</p>
+                <ul class="skill-features">
+                  <li><span>Interactive UI elements</span></li>
+                  <li><span>Form validation & user input</span></li>
+                  <li><span>DOM manipulation</span></li>
+                </ul>
+              </div>
+              <span class="skill-btn">
+                <span>Learn More</span>
+                <svg viewBox="0 0 16 16" fill="none"><path d="M4.5 11.5L11.5 4.5M11.5 4.5H5.5M11.5 4.5V10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Card 3: Responsive Designs -->
+          <a class="skill-card lazy-reveal" href="project.html?project=responsive-design" aria-label="View responsive design project details">
+            <div class="skill-visual" data-title="Responsive Designs">
+              <img src="assets/responsive.jpg" alt="Responsive Design Illustration">
+            </div>
+            <div class="skill-content">
+              <div class="skill-header">
+                <div class="skill-icon icon-blue">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                </div>
+                <h4 class="skill-title">Responsive Designs</h4>
+              </div>
+              <span class="skill-subtitle">ADAPTIVE / FLEXIBLE / USER-FRIENDLY</span>
+              <div class="skill-details-content">
+                <p class="skill-desc">I create responsive websites that look and work perfectly on all devices. Whether it's a mobile phone, tablet, or desktop, I make sure the experience is smooth and consistent everywhere.</p>
+                <ul class="skill-features">
+                  <li><span>Mobile-first approach</span></li>
+                  <li><span>Flexible layouts & grids</span></li>
+                  <li><span>Cross-device compatibility</span></li>
+                </ul>
+              </div>
+              <span class="skill-btn">
+                <span>Learn More</span>
+                <svg viewBox="0 0 16 16" fill="none"><path d="M4.5 11.5L11.5 4.5M11.5 4.5H5.5M11.5 4.5V10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Card 4: Git & GitHub -->
+          <a class="skill-card lazy-reveal" href="project.html?project=git-github" aria-label="View Git and GitHub project details">
+            <div class="skill-visual" data-title="Git &amp; GitHub">
+              <img class="github-image" src="assets/github.png" alt="Git & GitHub Illustration">
+            </div>
+            <div class="skill-content">
+              <div class="skill-header">
+                <div class="skill-icon icon-red">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </div>
+                <h4 class="skill-title">Git & GitHub</h4>
+              </div>
+              <span class="skill-subtitle">VERSION CONTROL / COLLABORATION / OPEN SOURCE</span>
+              <div class="skill-details-content">
+                <p class="skill-desc">I use Git and GitHub to manage my code, track changes, and collaborate on projects. It helps me keep my work organized, versioned and ready for deployment.</p>
+                <ul class="skill-features">
+                  <li><span>Track changes and history</span></li>
+                  <li><span>Manage repositories</span></li>
+                  <li><span>Collaborate with others</span></li>
+                </ul>
+              </div>
+              <span class="skill-btn">
+                <span>Learn More</span>
+                <svg viewBox="0 0 16 16" fill="none"><path d="M4.5 11.5L11.5 4.5M11.5 4.5H5.5M11.5 4.5V10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+          </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================ -->
+    <!-- SECTION 3: SERVICE [4] (CORE OFFERINGS)      -->
+    <!-- ============================================ -->
+    <section class="page-section section-alternate" id="service">
+      <div class="section-container">
+        <div class="section-header service-section-header lazy-reveal">
+          <h2 class="service-section-title">/SERVICE</h2>
+          <p class="service-section-desc">Transforming vision into reality through clean code, stunning visuals, and interactive web architecture.</p>
+        </div>
+
+        <div class="services-container">
+          <details class="service-card lazy-reveal" name="services" open>
+            <summary class="service-summary">
+              <span class="service-num">01</span>
+              <span class="service-title">UI/UX DESIGN</span>
+              <span class="service-indicator" aria-hidden="true">↗</span>
+            </summary>
+            <div class="service-details">
+              <div class="service-info">
+                <p class="service-desc">Thoughtful, user-friendly interfaces for websites and digital products, designed around clear structure and smooth experiences.</p>
+                <ul class="service-list">
+                  <li>Clean page structure</li>
+                  <li>Intuitive user journeys</li>
+                  <li>Accessible interface details</li>
+                  <li>Responsive layouts</li>
+                </ul>
+                <a href="#contact" class="service-link">Inquire Service ↗</a>
+              </div>
+              <img class="service-preview-image" src="assets/responsive-focus.jpg" alt="Product interface displayed across mobile devices">
+            </div>
+          </details>
+
+          <details class="service-card lazy-reveal" name="services">
+            <summary class="service-summary">
+              <span class="service-num">02</span>
+              <span class="service-title">WEB DESIGN &amp; DEVELOPMENT</span>
+              <span class="service-indicator" aria-hidden="true">↗</span>
+            </summary>
+            <div class="service-details">
+              <div class="service-info">
+                <p class="service-desc">Modern websites built to look polished, load smoothly, and work reliably across phones, tablets, and desktops.</p>
+                <ul class="service-list">
+                  <li>Semantic HTML and modern CSS</li>
+                  <li>Interactive JavaScript features</li>
+                  <li>Mobile-first responsive design</li>
+                  <li>Cross-browser compatibility</li>
+                </ul>
+                <a href="#contact" class="service-link">Inquire Service ↗</a>
+              </div>
+              <img class="service-preview-image" src="assets/web-design-development.jpg" alt="Web design and development across devices">
+            </div>
+          </details>
+
+          <details class="service-card lazy-reveal" name="services">
+            <summary class="service-summary">
+              <span class="service-num">03</span>
+              <span class="service-title">BRANDING &amp; VISUAL DESIGN</span>
+              <span class="service-indicator" aria-hidden="true">↗</span>
+            </summary>
+            <div class="service-details">
+              <div class="service-info">
+                <p class="service-desc">A consistent visual direction that gives your website a recognizable look and makes every page feel connected.</p>
+                <ul class="service-list">
+                  <li>Consistent colors and typography</li>
+                  <li>Clear visual hierarchy</li>
+                  <li>Reusable interface styles</li>
+                  <li>Polished responsive components</li>
+                </ul>
+                <a href="#contact" class="service-link">Inquire Service ↗</a>
+              </div>
+              <img class="service-preview-image" src="assets/motion-interactions.png" alt="Branding and visual design artwork">
+            </div>
+          </details>
+
+          <details class="service-card lazy-reveal" name="services">
+            <summary class="service-summary">
+              <span class="service-num">04</span>
+              <span class="service-title">MOTION &amp; INTERACTIONS</span>
+              <span class="service-indicator" aria-hidden="true">↗</span>
+            </summary>
+            <div class="service-details">
+              <div class="service-info">
+                <p class="service-desc">Subtle motion and useful interactions that make a website feel responsive without getting in the way.</p>
+                <ul class="service-list">
+                  <li>Responsive hover and focus states</li>
+                  <li>Clear interaction feedback</li>
+                  <li>Lightweight interface animations</li>
+                  <li>Smooth page transitions</li>
+                </ul>
+                <a href="#contact" class="service-link">Inquire Service ↗</a>
+              </div>
+              <img class="service-preview-image" src="assets/branding-visual-design.png" alt="Interactive motion and animation artwork">
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================ -->
+    <!-- SECTION 4: EXPERIENCE [4y+] (TRACK RECORD)   -->
+    <!-- ============================================ -->
+    <section class="page-section" id="experience">
+      <div class="section-container">
+        <div class="section-header lazy-reveal">
+          <div class="section-tag">
+            <span class="tag-number">03</span>
+            <span class="tag-title">Background</span>
+          </div>
+          <div class="section-title-wrap">
+            <h2 class="section-heading">Experience & Milestones <span class="badge-count">[4y+]</span></h2>
+            <p class="section-subtext">Over 4 years creating responsive digital experiences across UI/UX, web development, visual design, and motion.</p>
+          </div>
+        </div>
+
+        <div class="experience-timeline">
+          <!-- Item 1 -->
+          <div class="timeline-row lazy-reveal">
+            <div class="timeline-period">
+              <span class="year-range">2022 — 2023</span>
+            </div>
+            <div class="timeline-details">
+              <h3 class="role-company">UI/UX Designer</h3>
+              <p class="role-blurb">Designed clear, user-friendly interfaces with thoughtful page structure, responsive layouts, and intuitive user flows.</p>
+            </div>
+            <div class="timeline-skills">
+              <span>UI/UX Design</span>
+              <span>Responsive Design</span>
+              <span>User Flows</span>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-row lazy-reveal">
+            <div class="timeline-period">
+              <span class="year-range">2023 — 2024</span>
+            </div>
+            <div class="timeline-details">
+              <h3 class="role-company">Web Designer & Developer</h3>
+              <p class="role-blurb">Built responsive websites with semantic HTML, modern CSS, and JavaScript interactions, using Git and GitHub to manage code.</p>
+            </div>
+            <div class="timeline-skills">
+              <span>HTML & CSS</span>
+              <span>JavaScript</span>
+              <span>Git & GitHub</span>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline-row lazy-reveal">
+            <div class="timeline-period">
+              <span class="year-range">2024 — 2025</span>
+            </div>
+            <div class="timeline-details">
+              <h3 class="role-company">Branding & Visual Designer</h3>
+              <p class="role-blurb">Created cohesive visual experiences with consistent typography, color, and composition across digital designs.</p>
+            </div>
+            <div class="timeline-skills">
+              <span>Visual Design</span>
+              <span>Brand Identity</span>
+              <span>Typography</span>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="timeline-row lazy-reveal">
+            <div class="timeline-period">
+              <span class="year-range">2026 — Present</span>
+              <span class="status-pill-subtle">Current Focus</span>
+            </div>
+            <div class="timeline-details">
+              <h3 class="role-company">Motion & Interaction Designer</h3>
+              <p class="role-blurb">Added purposeful motion and interactive details to make digital experiences feel dynamic, clear, and intuitive.</p>
+            </div>
+            <div class="timeline-skills">
+              <span>Motion Design</span>
+              <span>UI Interactions</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================ -->
+    <!-- SECTION 5: CONTACT (LET'S TALK)             -->
+    <!-- ============================================ -->
+    <section class="page-section section-alternate" id="contact">
+      <div class="section-container">
+        <div class="contact-card lazy-reveal">
+          <div class="contact-card-content">
+            <div class="section-tag">
+              <span class="tag-number">04</span>
+              <span class="tag-title">Contact</span>
+            </div>
+            <h2 class="contact-big-title">Have an ambitious project in mind?<br>Let's build something extraordinary.</h2>
+            <p class="contact-sub">Currently open for select freelance contracts, advisory roles, and high-growth product designs.</p>
+
+            <div class="contact-cta-row">
+              <a href="mailto:bilalaurangzaib664@gmail.com" class="btn-primary-talk">
+                <span>bilalaurangzaib664@gmail.com</span>
+                <svg viewBox="0 0 16 16" width="16" height="16" fill="none">
+                  <path d="M4.5 11.5L11.5 4.5H5.5M11.5 4.5V10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+              <button class="btn-copy-email" id="copyEmailBtn" data-email="bilalaurangzaib664@gmail.com">
+                <span id="copyText">Copy Email</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <form class="quick-inquiry-form" id="contactForm">
+            <h3 class="form-title">Send a Quick Message</h3>
+            <div class="form-group">
+              <label for="userName">Your Name</label>
+              <input type="text" id="userName" name="name" placeholder="e.g. Alex Morgan" required>
+            </div>
+            <div class="form-group">
+              <label for="userEmail">Email Address</label>
+              <input type="email" id="userEmail" name="email" placeholder="alex@company.com" required>
+            </div>
+            <div class="form-group">
+              <label for="serviceType">Interested In</label>
+              <select id="serviceType" name="service">
+                <option value="uiux">UI/UX & Product Design</option>
+                <option value="mobile">Mobile App Design</option>
+                <option value="design-system">Design System</option>
+                <option value="audit">Conversion Rate Audit</option>
+                <option value="other">Other / Consultation</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="userMessage">Project Overview</label>
+              <textarea id="userMessage" name="message" rows="3" placeholder="Tell me about your project goals and timeline..." required></textarea>
+            </div>
+            <button type="submit" class="btn-submit-form">
+              <span>Send Message</span>
+              <svg viewBox="0 0 16 16" width="16" height="16" fill="none">
+                <path d="M4.5 11.5L11.5 4.5M11.5 4.5H5.5M11.5 4.5V10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="form-feedback" id="formFeedback"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <span class="footer-logo">BILAL ZAIB</span>
+          <span class="footer-copy">© 2026. All rights reserved. Crafted with precision.</span>
+        </div>
+        <div class="footer-right">
+          <a href="#home">Back to Top ↑</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Interactive JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
