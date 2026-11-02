@@ -83,6 +83,30 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  const workCarousel = document.getElementById('workCarousel');
+  if (workCarousel) {
+    const previousButton = document.querySelector('[data-work-direction="previous"]');
+    const nextButton = document.querySelector('[data-work-direction="next"]');
+    const updateWorkCarouselControls = () => {
+      const maxScroll = workCarousel.scrollWidth - workCarousel.clientWidth;
+      if (previousButton) previousButton.disabled = workCarousel.scrollLeft <= 1;
+      if (nextButton) nextButton.disabled = workCarousel.scrollLeft >= maxScroll - 1;
+    };
+    const scrollWorkCarousel = (direction) => {
+      const card = workCarousel.querySelector('.skill-card');
+      if (!card) return;
+      const grid = workCarousel.querySelector('.skills-grid');
+      const gap = grid ? parseFloat(getComputedStyle(grid).columnGap) || 0 : 0;
+      workCarousel.scrollBy({ left: direction * (card.getBoundingClientRect().width + gap), behavior: 'smooth' });
+    };
+
+    previousButton?.addEventListener('click', () => scrollWorkCarousel(-1));
+    nextButton?.addEventListener('click', () => scrollWorkCarousel(1));
+    workCarousel.addEventListener('scroll', updateWorkCarouselControls, { passive: true });
+    window.addEventListener('resize', updateWorkCarouselControls);
+    updateWorkCarouselControls();
+  }
+
   // 4. Contact Form Submission Simulation
   const contactForm = document.getElementById('contactForm');
   const formFeedback = document.getElementById('formFeedback');

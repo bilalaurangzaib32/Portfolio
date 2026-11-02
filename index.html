@@ -151,36 +151,29 @@
       <div class="section-container">
         <div class="skills-intro lazy-reveal">
           <div class="skills-text-content">
-            <h3 class="skills-main-title"><span>Work</span></h3>
+            <span class="work-eyebrow">● FEATURED PROJECTS</span>
+            <h3 class="skills-main-title">My Work</h3>
             <p class="skills-main-desc">I work with modern web technologies to build fast, responsive, and user-friendly digital solutions. Here are the main skills and services I offer.</p>
           </div>
-          <div class="skills-decorative">
-            <span class="handwritten-note">Clean Code<br>Better Web<br>Real Impact</span>
+          <div class="work-carousel-controls" aria-label="Project carousel controls">
+            <button class="work-carousel-button" type="button" data-work-direction="previous" aria-label="Show previous projects" disabled>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m15 18-6-6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="work-carousel-button" type="button" data-work-direction="next" aria-label="Show next projects">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9 18 6-6-6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
           </div>
         </div>
 
         <div class="work-showcase">
-          <div class="section-header lazy-reveal">
-            <div class="work-title-group">
-              <span class="work-bg-title">PORTFOLIO</span>
-              <h2 class="work-fg-title">/SELECTED WORK</h2>
-            </div>
-          </div>
-
-          <!-- Skills Grid (Refactored Work Grid) -->
-          <div class="skills-grid">
-          <!-- Card 1: HTML & CSS -->
-          <a class="skill-card lazy-reveal" href="project.html?project=html-css" aria-label="View HTML and CSS project details">
-            <div class="skill-visual" data-title="HTML &amp; CSS">
+          <div class="work-carousel" id="workCarousel" role="region" aria-roledescription="carousel" aria-label="Featured projects">
+            <div class="skills-grid">
+          <article class="skill-card lazy-reveal">
+            <div class="skill-visual">
               <img src="assets/html-css.jpg" alt="HTML & CSS Illustration">
             </div>
             <div class="skill-content">
-              <div class="skill-header">
-                <div class="skill-icon icon-blue">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>
-                </div>
-                <h4 class="skill-title">HTML & CSS</h4>
-              </div>
+              <h4 class="skill-title">HTML & CSS</h4>
               <span class="skill-subtitle">STRUCTURE / STYLE / BEAUTY</span>
               <div class="skill-details-content">
                 <p class="skill-desc">I use HTML and CSS to create clean, semantic and visually appealing websites. From simple landing pages to complex layouts, I focus on writing clean code and responsive designs.</p>
@@ -190,25 +183,19 @@
                   <li><span>Cross-browser compatibility</span></li>
                 </ul>
               </div>
-              <span class="skill-btn">
-                <span>Learn More</span>
-                <svg viewBox="0 0 16 16" fill="none"><path d="M4.5 11.5L11.5 4.5M11.5 4.5H5.5M11.5 4.5V10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
+              <div class="work-card-actions">
+                <a class="work-project-link" href="project.html?project=html-css">View Project <span aria-hidden="true">→</span></a>
+                <a class="work-image-link" href="assets/html-css.jpg" target="_blank" rel="noopener noreferrer">◉ View Image</a>
+              </div>
             </div>
-          </a>
+          </article>
 
-          <!-- Card 2: JavaScript -->
-          <a class="skill-card lazy-reveal" href="project.html?project=javascript" aria-label="View JavaScript project details">
-            <div class="skill-visual" data-title="JavaScript">
+          <article class="skill-card lazy-reveal">
+            <div class="skill-visual">
               <img src="assets/javascript.jpg" alt="JavaScript Illustration">
             </div>
             <div class="skill-content">
-              <div class="skill-header">
-                <div class="skill-icon icon-yellow">
-                  <span class="js-text">JS</span>
-                </div>
-                <h4 class="skill-title">JavaScript</h4>
-              </div>
+              <h4 class="skill-title">JavaScript</h4>
               <span class="skill-subtitle">INTERACTIVITY / DYNAMIC / FUNCTIONAL</span>
               <div class="skill-details-content">
                 <p class="skill-desc">I use JavaScript to add interactivity and dynamic features to websites. From form validation to custom animations, I bring ideas to life with clean and efficient code.</p>
@@ -218,25 +205,19 @@
                   <li><span>DOM manipulation</span></li>
                 </ul>
               </div>
-              <span class="skill-btn">
-                <span>Learn More</span>
-                <svg viewBox="0 0 16 16" fill="none"><path d="M4.5 11.5L11.5 4.5M11.5 4.5H5.5M11.5 4.5V10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
+              <div class="work-card-actions">
+                <a class="work-project-link" href="project.html?project=javascript">View Project <span aria-hidden="true">→</span></a>
+                <a class="work-image-link" href="assets/javascript.jpg" target="_blank" rel="noopener noreferrer">◉ View Image</a>
+              </div>
             </div>
-          </a>
+          </article>
 
-          <!-- Card 3: Responsive Designs -->
-          <a class="skill-card lazy-reveal" href="project.html?project=responsive-design" aria-label="View responsive design project details">
-            <div class="skill-visual" data-title="Responsive Designs">
+          <article class="skill-card lazy-reveal">
+            <div class="skill-visual">
               <img src="assets/responsive.jpg" alt="Responsive Design Illustration">
             </div>
             <div class="skill-content">
-              <div class="skill-header">
-                <div class="skill-icon icon-blue">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-                </div>
-                <h4 class="skill-title">Responsive Designs</h4>
-              </div>
+              <h4 class="skill-title">Responsive Designs</h4>
               <span class="skill-subtitle">ADAPTIVE / FLEXIBLE / USER-FRIENDLY</span>
               <div class="skill-details-content">
                 <p class="skill-desc">I create responsive websites that look and work perfectly on all devices. Whether it's a mobile phone, tablet, or desktop, I make sure the experience is smooth and consistent everywhere.</p>
@@ -246,25 +227,19 @@
                   <li><span>Cross-device compatibility</span></li>
                 </ul>
               </div>
-              <span class="skill-btn">
-                <span>Learn More</span>
-                <svg viewBox="0 0 16 16" fill="none"><path d="M4.5 11.5L11.5 4.5M11.5 4.5H5.5M11.5 4.5V10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
+              <div class="work-card-actions">
+                <a class="work-project-link" href="project.html?project=responsive-design">View Project <span aria-hidden="true">→</span></a>
+                <a class="work-image-link" href="assets/responsive.jpg" target="_blank" rel="noopener noreferrer">◉ View Image</a>
+              </div>
             </div>
-          </a>
+          </article>
 
-          <!-- Card 4: Git & GitHub -->
-          <a class="skill-card lazy-reveal" href="project.html?project=git-github" aria-label="View Git and GitHub project details">
-            <div class="skill-visual" data-title="Git &amp; GitHub">
+          <article class="skill-card lazy-reveal">
+            <div class="skill-visual">
               <img class="github-image" src="assets/github.png" alt="Git & GitHub Illustration">
             </div>
             <div class="skill-content">
-              <div class="skill-header">
-                <div class="skill-icon icon-red">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                </div>
-                <h4 class="skill-title">Git & GitHub</h4>
-              </div>
+              <h4 class="skill-title">Git & GitHub</h4>
               <span class="skill-subtitle">VERSION CONTROL / COLLABORATION / OPEN SOURCE</span>
               <div class="skill-details-content">
                 <p class="skill-desc">I use Git and GitHub to manage my code, track changes, and collaborate on projects. It helps me keep my work organized, versioned and ready for deployment.</p>
@@ -274,12 +249,13 @@
                   <li><span>Collaborate with others</span></li>
                 </ul>
               </div>
-              <span class="skill-btn">
-                <span>Learn More</span>
-                <svg viewBox="0 0 16 16" fill="none"><path d="M4.5 11.5L11.5 4.5M11.5 4.5H5.5M11.5 4.5V10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </span>
+              <div class="work-card-actions">
+                <a class="work-project-link" href="project.html?project=git-github">View Project <span aria-hidden="true">→</span></a>
+                <a class="work-image-link" href="assets/github.png" target="_blank" rel="noopener noreferrer">◉ View Image</a>
+              </div>
             </div>
-          </a>
+          </article>
+            </div>
           </div>
         </div>
       </div>
